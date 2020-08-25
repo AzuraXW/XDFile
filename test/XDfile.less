@@ -1,0 +1,31 @@
+.xd-wrap{
+  .xd-file{
+    display: none;
+  }
+  .xd-fileimg-preview-box{
+    transition: all .3s;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    border: 1px dotted #888;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    &::after{
+      content: '+';
+      font-size: 36px;
+      font-weight:800;
+      color: #888;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  // 当文件拖动到预览框的时候
+  .xd-file-dropenter{
+    background-color: #acacac;
+  }
+}

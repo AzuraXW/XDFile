@@ -1,0 +1,28 @@
+.xd-wrap .xd-file {
+  display: none;
+}
+.xd-wrap .xd-fileimg-preview-box {
+  transition: all 0.3s;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  border: 1px dotted #888;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.xd-wrap .xd-fileimg-preview-box::after {
+  content: '+';
+  font-size: 36px;
+  font-weight: 800;
+  color: #888;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.xd-wrap .xd-file-dropenter {
+  background-color: #acacac;
+}
